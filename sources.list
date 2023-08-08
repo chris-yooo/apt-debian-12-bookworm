@@ -1,0 +1,39 @@
+#### MAIN
+
+##  MAIN-1
+
+deb http://deb.debian.org/debian/ bookworm main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm main non-free-firmware contrib non-free
+
+##  UPDATES
+
+deb http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
+
+##  SECURITY
+
+deb http://security.debian.org/debian-security bookworm-security main non-free-firmware contrib non-free
+deb-src http://security.debian.org/debian-security bookworm-security main non-free-firmware contrib non-free
+
+##  BACKPORTS
+
+deb http://deb.debian.org/debian/ bookworm-backports main non-free-firmware contrib non-free
+deb-src http://deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
+
+
+
+
+
+####  UNSTABLE
+#  deb http://deb.debian.org/debian/ unstable main non-free-firmware contrib non-free
+
+####  EXPERIMENTAL
+deb http://deb.debian.org/debian/ experimental main non-free-firmware contrib non-free
+
+####  TESTING
+##  TESTING-MAIN
+#  deb http://deb.debian.org/debian/ testing main non-free-firmware contrib non-free
+
+##  TESTING-SECURITY
+#  deb http://security.debian.org/debian-security testing-security main non-free-firmware contrib non-free
+#  deb http://security.debian.org/ testing-security main non-free-firmware contrib non-free

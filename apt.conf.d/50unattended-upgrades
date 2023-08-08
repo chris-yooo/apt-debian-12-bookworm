@@ -85,7 +85,7 @@ Unattended-Upgrade::AutoFixInterruptedDpkg "true";
 // big step back from the 30 minutes allowed for InstallOnShutdown previously.
 // Users enabling InstallOnShutdown mode are advised to increase
 // InhibitDelayMaxSec even further, possibly to 30 minutes.
-Unattended-Upgrade::InstallOnShutdown "false";
+//Unattended-Upgrade::InstallOnShutdown "false";
 
 // Send email to this address for problems or packages upgrades
 // If empty or unset then no email is sent, make sure that you
@@ -112,7 +112,7 @@ Unattended-Upgrade::Remove-Unused-Dependencies "false";
 
 // Automatically reboot *WITHOUT CONFIRMATION* if
 //  the file /var/run/reboot-required is found after the upgrade
-Unattended-Upgrade::Automatic-Reboot "false";
+//Unattended-Upgrade::Automatic-Reboot "false";
 
 // Automatically reboot even if there are users currently logged in
 // when Unattended-Upgrade::Automatic-Reboot is set to true
@@ -125,7 +125,7 @@ Unattended-Upgrade::Automatic-Reboot "false";
 
 // Use apt bandwidth limit feature, this example limits the download
 // speed to 70kb/sec
-Acquire::http::Dl-Limit "100000";
+Acquire::http::Dl-Limit "5000";
 
 // Enable logging to syslog. Default is False
 Unattended-Upgrade::SyslogEnable "true";
@@ -135,14 +135,14 @@ Unattended-Upgrade::SyslogFacility "daemon";
 
 // Download and install upgrades only on AC power
 // (i.e. skip or gracefully stop updates on battery)
-Unattended-Upgrade::OnlyOnACPower "false";
+// Unattended-Upgrade::OnlyOnACPower "true";
 
 // Download and install upgrades only on non-metered connection
 // (i.e. skip or gracefully stop updates on a metered connection)
 // Unattended-Upgrade::Skip-Updates-On-Metered-Connections "true";
 
 // Verbose logging
-Unattended-Upgrade::Verbose "true";
+Unattended-Upgrade::Verbose "false";
 
 // Print debugging information both in unattended-upgrades and
 // in unattended-upgrade-shutdown
